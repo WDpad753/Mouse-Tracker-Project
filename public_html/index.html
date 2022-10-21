@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+    Author: Mohamed
+    Project: Mouse Tracker project
+
+    Purpose:
+    Here are HTML codes that are used to design the webpage.
+-->
+
+<html id="main">
+    <head>
+        <title>Mouse Tracker Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .center
+            {
+                text-align: center;
+                background-color: aquamarine;
+            }
+            .tablecenter{
+                margin-left: auto;
+                margin-right: auto;
+                background-color: firebrick;
+                color: white;
+                border-color: black;
+            }
+            
+            .tablepadding{
+                padding: 20px;
+            }
+            
+            .tracker{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-color: blue;
+                border-radius: 50%;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+                transition: 0s;
+                /*visibility: hidden;*/
+                /*pointer-events: none;*/
+
+                
+                /* position: absolute;
+                transform: translate(-50%,-50%);
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                border: 2px solid black;
+                top: 50%;
+                left: 50%;
+                transition: 0s;
+                pointer-events: none;*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="center"> Mouse Tracker Project</h1>
+        <div class="center"> Location of the Cursor: </div> 
+        <div class="container">
+            <div class="tab mouseloc">
+                <table id="table" border="5" class="tablecenter">
+                    <tr>
+                        <th style="text-align: center" class="tablepadding">Mouse Location (X):<div id="loc_X"></div></th>
+                        <th style="text-align: center" class="tablepadding">Mouse Location (Y):<div id="loc_Y"></div></th>
+                    </tr>                    
+                </table>
+            </div>
+        </div>
+    <div class="tracker" id="tracker"></div>
+    <script src="main.js"></script>
+    </body>
+</html>
